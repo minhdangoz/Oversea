@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">	
+	<link rel="shortcut icon" href="image/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/datepicker.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">	
+	<!-- Custom Fonts -->
+  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery.js"></script>  
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/title_js.js"></script>
+	<script type="text/javascript" src="js/datepicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<a href="#"><img src="image/logo.png"></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    	</button>
+			<!-- <a class="navbar-brand" href="#">Jimmy Lâm</a> -->
+
+		</div>
+
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right" role="menu">			
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Khuyến mãi</a></li>
+				<li><a href="#">Dịch vụ</a></li>
+				<li><a href="#">Về chúng tôi</a></li>
+				<li><a href="#">Liên hệ</a></li>
+				<li><a href="#">Đăng nhập</a></li>
+			</ul>
+		</div>
+
+	</div>
+</nav>
+</header>
+
+	<div id="banner" class="container">
+		<div id="find" class="row">		
+			<div id="whereToGo" class="col-lg-3 col-sm-6">
+			<div class="find">
+				<form class="form-horizontal form-search" role="form">
+					<h4 class="text-center text-header">BẠN MUỐN ĐI ĐÂU?</h4>
+					  <div class="form-group">
+					    <label class="col-sm-5 control-label">Loại</label>
+					    <div class="col-sm-7">
+					      <select class="form-control">
+					      	<option value="0" selected="selected">&nbsp</option>      	
+					      	<option value="1">1</option>
+					      	<option value="2">2</option>
+					      	<option value="3">3</option>
+					      </select>
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label class="col-sm-5 control-label">Nơi đến</label>
+					    <div class="col-sm-7">
+					      <select class="form-control" placeholder="Chọn">
+					      	<option value="0" selected="selected">&nbsp</option>
+					      	<option value="1">1</option>
+					      	<option value="2">2</option>
+					      	<option value="3">3</option>
+					      </select>
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label class="col-sm-5 control-label">Khu DL/TP</label>
+					    <div class="col-sm-7">
+					      <select class="form-control" placeholder="Chọn">
+					      	<option value="0" selected="selected">&nbsp</option>
+					      	<option value="1">1</option>
+					      	<option value="2">2</option>
+					      	<option value="3">3</option>
+					      </select>
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <label class="col-sm-5 control-label">Khởi hành từ</label>
+					    <div class="col-sm-7">
+					      <select class="form-control">
+					      	<option value="0" selected="selected">&nbsp</option>
+					      	<option value="1">1</option>
+					      	<option value="2">2</option>
+					      	<option value="3">3</option>
+					      </select>
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label class="col-sm-5 control-label">Ngày khởi hành</label>
+					    <div class="col-sm-7">
+						    <div class="align-left">
+							  	<input type="text" class="datepicker" >
+								</div>				      
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label id="labelRoom" class="col-sm-5 control-label">Phòng</label>
+					    <div class="col-sm-7">
+					    <p class="age">Số phòng|Người lớn|Trẻ em</p>
+						    <div class="con-sm-5">
+						      <select class="form-control" id="selectRoom">
+						      	<option value="0" selected="selected">&nbsp</option>
+						      	<option value="1">1</option>
+						      	<option value="2">2</option>
+						      	<option value="3">3</option>
+						      </select>
+					      </div>
+					    	<div class="con-sm-5">
+						      <select class="form-control" id="selectRoom">
+						      	<option value="0" selected="selected">&nbsp</option>
+						      	<option value="1">1</option>
+						      	<option value="2">2</option>
+						      	<option value="3">3</option>
+						      </select>
+					      </div>
+					      <div class="con-sm-5">
+						      <select class="form-control" id="selectRoom">
+						      	<option value="0" selected="selected">&nbsp</option>
+						      	<option value="1">1</option>
+						      	<option value="2">2</option>
+						      	<option value="3">3</option>
+						      </select>
+					      </div>
+					      
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					    <div class="col-sm-offset-5 btn_search">
+					      <button type="submit" class="btn btn-default">Tìm kiếm</button>
+					    </div>
+					  </div>
+				</form>
+				</div>
+			</div>
+
+
+			<div id="main_banner" class="col-lg-9 col-sm-6">
+				<section class="slider">
+					<div id="slider-demo" class="carousel slide" data-interval="2500" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#slider-demo" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-demo" data-slide-to="1"></li>
+							<li data-target="#slider-demo" data-slide-to="2"></li>
+							<li data-target="#slider-demo" data-slide-to="3"></li>
+							<li data-target="#slider-demo" data-slide-to="4"></li>
+							<li data-target="#slider-demo" data-slide-to="5"></li>
+							<li data-target="#slider-demo" data-slide-to="6"></li>
+							<li data-target="#slider-demo" data-slide-to="7"></li>
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">							
+								<div class="item active">
+									<a href=""><img src="image/slider/slider4.jpg" alt="Slider 1"></a>
+									<div class="carousel-caption"></div>
+								</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider7.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider8.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider5.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider9.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider6.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider11.jpg" alt="Slider"/></a>
+							</div>
+							<div class="item">
+								<a href=""><img src="image/slider/slider10.jpg" alt="Slider"/></a>
+							</div>
+						</div>
+						<!-- Controls -->
+						<a class="left carousel-control" href="#slider-demo" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#slider-demo" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</section><!--end .slider-->
+			</div> <!-- End Main Banner -->				
+		</div> <!-- End Row -->	
+	</div> <!-- End Banner -->		
+
+	<div id="content-wrapper" class="container">
+		<div class="row">
+			<aside class="col-lg-3">
+				<div id="aside1">
+					<div id="head_sidebar"><p>DU LỊCH TRONG NƯỚC</p></div>
+						<div id="list">
+							<ul>
+								<li><a href="#">Miền Bắc</a></li>
+								<li><a href="#">Miền Trung</a></li>
+								<li><a href="#">Miền Nam</a></li>
+							</ul>
+						</div>
+				</div>
+
+				<div id="aside2">
+					<div id="head_sidebar"><p>DU LỊCH NƯỚC NGOÀI</p></div>
+						<div id="list">
+							<ul>
+								<li><a href="#">Châu Á</a></li>
+								<li><a href="#">Châu Âu</a></li>
+								<li><a href="#">Châu Mỹ</a></li>
+								<li><a href="#">Châu Phi</a></li>
+								<li><a href="#">Châu Úc</a></li>
+							</ul>
+						</div>
+				</div>
+				<div id="aside3">
+					<div id="head_sidebar"><p>DU LỊCH THEO CHỦ ĐỀ</p></div>
+						<div id="list">
+							<ul>
+								<li><a href="#">Du lịch hàng ngày</a></li>
+								<li><a href="#">Du lịch phượt</a></li>
+								<li><a href="#">Du lịch sinh viên</a></li>
+								<li><a href="#">Du lịch mạo hiểm</a></li>
+								<li><a href="#">Du lịch trăng mật</a></li>
+								<li><a href="#">Du lịch biển</a></li>
+								<li><a href="#">Du lịch rừng núi</a></li>
+								<li><a href="#">Du lịch Vịnh Hạ Long</a></li>
+								<li><a href="#">Du lịch Festival Huế</a></li>
+							</ul>
+						</div>
+				</div>
+			</aside>
+
+
+			<div id="content" class="col-lg-9">
+				
+			</div>
+		</div> <!--End Row -->
+		
+	</div>
+</div> <!-- End Wrapper -->	
+
+</body>
+
+</html>
